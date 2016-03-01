@@ -38,7 +38,7 @@ void setup()
   Door leftDoor = {2, 5, true, 45, 135, 45,0,0};
   Door homeDoor = {3, 6, true, 45, 135, 45,0,0};
 
-  
+ 
   pinMode(rightDoor.pinIn, INPUT);
   pinMode(leftDoor.pinIn, INPUT);
   pinMode(homeDoor.pinIn, INPUT);
@@ -47,7 +47,8 @@ void setup()
   homeDoor.servo.attach(homeDoor.pinOut);
 
   checkDoor(rightDoor);
-  
+  // for tesitng
+  pinMode(13,OUTPUT);
 //  pinMode(homePumpIn, INPUT);
 //  pinMode(rightPumpIn, INPUT);
 //  pinMode(leftPumpIn, INPUT);
@@ -61,16 +62,25 @@ void loop()
   checkDoor(rightDoor);
   checkDoor(leftDoor);
   checkDoor(homeDoor);
+  //testing
+  if (rightDoor.nextMoveMs==0)
+  {
+    digitalWrite(13,HIGH);
+  }else
+  {
+    digitalWrite(13,LOW);
+  }
+  
 }
 
 
 
-void checkDoor(Door curDoor)
+void checkDoor(Door &curDoor)
 {
   
-  if (digitalRead (curDoor.pinIn)==0)
+  if (digitalRead (curDoor.pinIn)==LOW)
   {
-    curDoor.curState==0;
+    curDoor.curState==false;
     if (curDoor.curPos != curDoor.minPos)
     {
       curDoor.curPos--;
@@ -79,12 +89,21 @@ void checkDoor(Door curDoor)
   }
   else 
   {
-    curDoor.curState==1;
+    curDoor.curState==true;
     if (curDoor.curPos != curDoor.minPos)
     {
       curDoor.curPos++;
       curDoor.servo.write(curDoor.curPos);
     }
+  }
+  //testing
+  if ( ((int)(millis()/1000) % 2)==0)
+  {
+    curDoor.nextMoveMs=0;
+  }
+  else 
+  {
+    curDoor.nextMoveMs=1;
   }
   // check the state of the pump Pin
   // If there is a change in the Pin
