@@ -1,35 +1,52 @@
 
-const char deviceCMD    = 'D';
-const char syncCMD      = 'S';
-const char errorCMD     = 'E';
-const char handshakeCMD = '?';
 
+#include <Servo.h>
+Servo rightDoor;  
+Servo leftDoor; 
+Servo homeDoor; 
 
-const int homeDoorPIN   = 8;
-const int rightDoorPIN  = 9;
-const int leftDoorPIN   = 0; //actually 10, but 10 ofcourse not ascii.
+int pos = 0;    // variable to store the servo position
 
-const int homePumpPIN   = 4;
-const int rightPumpPIN  = 5;
-const int leftPumpPIN   = 6;
+const int rightDoorIn   = 1;
+const int leftDoorIn    = 2;
+const int homeDoorIn    = 3;
+const int rightDoorOut  = 4;
+const int leftDoorOut   = 5;
+const int homeDoorOut   = 6;
 
-const int syncPIN       = 2;
-bool handshakeNeeded;
-const unsigned long timeOutMin   = 500000;
+const int rightPumpIn   = 7;
+const int leftPumpIn    = 8; 
+const int homePumpIn    = 9;
+const int rightPumpOut  = 10;
+const int leftPumpOut   = 11; 
+const int homePumpOut   = 12;
+//
+//const int syncPIN       = 2;
+//bool handshakeNeeded;
+//const unsigned long timeOutMin   = 500000;
 
 void setup() 
 {
   Serial.begin(115200);
-  handshakeNeeded = true;
+//  handshakeNeeded = true;
 //  Serial.println ("Initializing port:");
-  pinMode(homeDoorPIN, OUTPUT);
-  pinMode(rightDoorPIN, OUTPUT);
-  pinMode(leftDoorPIN+10, OUTPUT);
-  pinMode(homePumpPIN, OUTPUT);
-  pinMode(rightPumpPIN, OUTPUT);
-  pinMode(leftPumpPIN, OUTPUT);
-  pinMode(syncPIN, OUTPUT);
+  
+  pinMode(rightDoorIn, INPUT);
+  pinMode(leftDoorIn, INPUT);
+  pinMode(homeDoorIn, INPUT);
+  myservo.attach(rightDoorOut);
+  myservo.attach(leftDoorOut);
+  myservo.attach(homeDoorOut);
+  
+  pinMode(homePumpIn, INPUT);
+  pinMode(rightPumpIn, INPUT);
+  pinMode(leftPumpIn, INPUT);
+  pinMode(homePumpOut, OUTPUT);
+  pinMode(rightPumpOut, OUTPUT);
+  pinMode(leftPumpOut, OUTPUT);
 }
+
+
 /////////////////////////////////
 // consider \n at the end of messages...for easier formatting
 /////////////////////////
