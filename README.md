@@ -19,8 +19,8 @@
 1. Camera with drivers installed
 2. Noldus mini USB-IO box connect to 24V power supply and USB
 3. Connect 4 ethernet cables to TTL. 
---* First 2 connect to arduino steppers to drive pumps
---* Second 2 commect to arduino input pins
+  * First 2 connect to arduino steppers to drive pumps
+  * Second 2 commect to arduino input pins
 4. Give arduino power (usb or power plug)
 5. Plug in output cables to doors.
 
@@ -29,22 +29,22 @@
 2. Select the downloaded TMazeIO_Template
 3. Name the new experiment and decide where it will be saved
 4. Under Experiment Explorer
---* Video Source 
----* Select 'Live Tacking'
---*Trial Control Hardware
----* Check 'Use of Trial Control hardware'
----* Click 'Settings'
-----1.Select mini USB-IO box from dropdown list
-----2.set up the first four TTLS 
---* Set up Arena Settings and Detection Settings
+  * Video Source 
+   * Select 'Live Tacking'
+  *Trial Control Hardware
+   * Check 'Use of Trial Control hardware'
+   * Click 'Settings'
+    1.Select mini USB-IO box from dropdown list
+    2.set up the first four TTLS 
+  * Set up Arena Settings and Detection Settings
 
 ##Run Experiment
 1. Select appropriate Arena and Detection
 2. Set the trial control settings
---* update email/text
---* set delay
---* **if this is a change to a perviously used trial control, duplicate and make the change**
---* Acquire Data
+  * update email/text
+  * set delay
+  * **if this is a change to a perviously used trial control, duplicate and make the change**
+  * Acquire Data
 
 
 #To Do:
@@ -53,5 +53,5 @@
 * Update Comments
 
 ###Hardware
-*finalize wiring
-*set up camera
+* Finalize wiring
+* Set up camera
