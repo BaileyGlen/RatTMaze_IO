@@ -44,7 +44,7 @@
   * update email/text
   * set delay
   * **if this is a change to a perviously used trial control, duplicate and make the change**
-  * Acquire Data
+3. Acquire Data
 
 
 #To Do:
