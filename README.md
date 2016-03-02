@@ -54,7 +54,7 @@
 
 #To Do:
 ###Ethovision
-* _Basic Trial Control_
+* ~~Basic Trial Control~~
 * Tracking
 * Maze Setup
 
@@ -64,11 +64,11 @@
   * Functioning
   * Commented
  * Door Code
-  * _Functioning_
+  * ~~Functioning~~
   * Tuned
   * Commented
  H
- * _Functioning_
+ * ~~Functioning~~
  * Commented
 
 ###Hardware
