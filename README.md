@@ -69,7 +69,7 @@
   * ~~Functioning~~
   * ~~Commented~~
   * ~~Speed Adjustability~~
-  * Directionality
+  * ~~Directionality~~
   * Tuned
 H
  * ~~Functioning~~
