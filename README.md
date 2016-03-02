@@ -46,6 +46,10 @@
   * **if this is a change to a perviously used trial control, duplicate and make the change**
 3. Acquire Data
 
+## Documentation
+###Hardware
+
+
 
 #To Do:
 ###Ino
