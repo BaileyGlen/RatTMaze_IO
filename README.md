@@ -49,14 +49,37 @@
 ## Documentation
 ###Hardware
 [RelayShield](http://www.seeedstudio.com/wiki/Relay_Shield_V2.0 "Relay Shield V2.0 from Seed Studio")
-
-
+[Arduino](https://www.arduino.cc/en/Main/ArduinoBoardUno "Arduino Uno")
+[Ethovision](http://www.noldus.com/restricted/ethovision-xt-8 "Ethovision XT 8.5"): This may be taken down, requires login
 
 #To Do:
-###Ino
-* Fix Pump code
-* Update Comments
+###Ethovision
+* _Basic Trial Control_
+* Tracking
+* Maze Setup
+
+###Arduino
+* INO 
+ * Pump Code
+  * Functioning
+  * Commented
+ * Door Code
+  * _Functioning_
+  * Tuned
+  * Commented
+* H
+ * _Functioning_
+ * Commented
 
 ###Hardware
-* Finalize wiring
+* Functional wiring
+ * Doors
+ * Pumps
+ * IO/Box
+ * Labels on Arduino
 * Set up camera
+* Keyboard
+* Mouse
+* Monitor
+
+###Documentation
