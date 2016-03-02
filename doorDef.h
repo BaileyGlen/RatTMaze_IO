@@ -7,7 +7,6 @@ struct door
   int minPos;
   int maxPos;
   int curPos;
-  bool curState; // 0= Close 1=open
   long nextMoveMs;
   Servo servo;
 };
