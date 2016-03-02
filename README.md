@@ -59,7 +59,7 @@
 * Maze Setup
 
 ###Arduino
-* INO 
+ INO 
  * Pump Code
   * Functioning
   * Commented
@@ -67,7 +67,7 @@
   * _Functioning_
   * Tuned
   * Commented
-* H
+ H
  * _Functioning_
  * Commented
 
