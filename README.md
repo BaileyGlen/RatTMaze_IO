@@ -48,6 +48,7 @@
 
 ## Documentation
 ###Hardware
+[RelayShield](http://www.seeedstudio.com/wiki/Relay_Shield_V2.0 "Relay Shield V2.0 from Seed Studio")
 
 
 
