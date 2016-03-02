@@ -62,16 +62,18 @@
 
 ###Arduino
  INO 
- * Pump Code
-  * Functioning
-  * Commented
+ * ~~Pump Code~~
+  * ~~Functioning~~
+  * ~~Commented~~
  * Door Code
   * ~~Functioning~~
   * Tuned
-  * Commented
- H
+  * ~~Commented~~
+  * Speed Adjustability
+  * Directionality
+H
  * ~~Functioning~~
- * Commented
+ * ~~Commented~~
 
 ###Hardware
 * Functional wiring
