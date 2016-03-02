@@ -49,7 +49,9 @@
 ## Documentation
 ###Hardware
 [RelayShield](http://www.seeedstudio.com/wiki/Relay_Shield_V2.0 "Relay Shield V2.0 from Seed Studio")
+
 [Arduino](https://www.arduino.cc/en/Main/ArduinoBoardUno "Arduino Uno")
+
 [Ethovision](http://www.noldus.com/restricted/ethovision-xt-8 "Ethovision XT 8.5"): This may be taken down, requires login
 
 #To Do:
