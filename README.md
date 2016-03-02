@@ -67,10 +67,10 @@
   * ~~Commented~~
  * Door Code
   * ~~Functioning~~
-  * Tuned
   * ~~Commented~~
-  * Speed Adjustability
+  * ~~Speed Adjustability~~
   * Directionality
+  * Tuned
 H
  * ~~Functioning~~
  * ~~Commented~~
@@ -81,7 +81,7 @@ H
  * Pumps
  * IO/Box
  * Labels on Arduino
-* Set up camera
+* ~~Set up camera~~
 * Keyboard
 * Mouse
 * Monitor
