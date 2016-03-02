@@ -82,7 +82,7 @@ H
  * IO/Box
  * Labels on Arduino
 * ~~Set up camera~~
-* Keyboard
+* ~~Keyboard~~
 * Mouse
 * Monitor
 
